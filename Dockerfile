@@ -1,5 +1,6 @@
+# Use Ruby 2.3.0, you can config your Ruby version, sample : 2.2.0, 2.2.2, ...
 FROM ruby:2.3.0
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev
 RUN mkdir /myapp
 WORKDIR /myapp
 ADD Gemfile /myapp/Gemfile
